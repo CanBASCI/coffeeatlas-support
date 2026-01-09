@@ -5,246 +5,156 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - CoffeeAtlas</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.6;
             color: #333;
-            background: linear-gradient(135deg, #f5f1e9 0%, #e8e0d0 100%);
-            min-height: 100vh;
+            max-width: 900px;
+            margin: 40px auto;
             padding: 20px;
         }
         
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 16px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
+        h1 {
+            font-size: 2em;
+            margin-bottom: 30px;
         }
         
-        .header {
-            background: linear-gradient(135deg, #7C4F2B 0%, #5E3E22 100%);
-            color: white;
-            padding: 40px 30px;
-            text-align: center;
-        }
-        
-        .header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            font-weight: 700;
-        }
-        
-        .header p {
-            font-size: 1.1em;
-            opacity: 0.9;
-        }
-        
-        .content {
-            padding: 40px 30px;
-        }
-        
-        .section {
-            margin-bottom: 40px;
-        }
-        
-        .section h2 {
-            color: #7C4F2B;
-            font-size: 1.8em;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #f5f1e9;
-            padding-bottom: 10px;
-        }
-        
-        .section h3 {
-            color: #5E3E22;
-            font-size: 1.3em;
-            margin-top: 25px;
+        h2 {
+            font-size: 1.5em;
+            margin-top: 30px;
             margin-bottom: 15px;
         }
         
-        .section p, .section li {
-            margin-bottom: 12px;
-            color: #555;
+        h3 {
+            font-size: 1.2em;
+            margin-top: 20px;
+            margin-bottom: 10px;
         }
         
-        .section ul {
+        p, li {
+            margin-bottom: 12px;
+        }
+        
+        ul {
             margin-left: 20px;
             margin-bottom: 20px;
         }
         
-        .section li {
-            margin-bottom: 8px;
-        }
-        
-        .highlight-box {
-            background: #f5f1e9;
-            border-left: 4px solid #7C4F2B;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
-        }
-        
-        .footer {
-            background: #f5f1e9;
-            padding: 30px;
-            text-align: center;
-            color: #666;
-            border-top: 1px solid #e8e0d0;
-        }
-        
-        .footer a {
-            color: #7C4F2B;
+        a {
+            color: #0066cc;
             text-decoration: none;
         }
         
-        .footer a:hover {
+        a:hover {
             text-decoration: underline;
         }
         
+        .highlight {
+            margin: 20px 0;
+            padding: 15px;
+            background: #f5f5f5;
+            border-left: 3px solid #ccc;
+        }
+        
         .last-updated {
-            color: #888;
+            color: #666;
             font-size: 0.9em;
             font-style: italic;
             margin-top: 30px;
         }
-        
-        @media (max-width: 600px) {
-            .header h1 {
-                font-size: 2em;
-            }
-            
-            .content {
-                padding: 30px 20px;
-            }
-        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>☕ CoffeeAtlas</h1>
-            <p>Privacy Policy</p>
-        </div>
-        
-        <div class="content">
-            <div class="highlight-box">
-                <p><strong>Last Updated:</strong> December 2025</p>
-                <p><strong>Effective Date:</strong> December 2025</p>
-            </div>
-            
-            <div class="section">
-                <h2>1. Introduction</h2>
-                <p>Welcome to CoffeeAtlas. We are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we handle data in our application.</p>
-                <p>CoffeeAtlas is an offline-first application designed to help you track your coffee consumption and explore coffee recipes. Your privacy is our priority.</p>
-            </div>
-            
-            <div class="section">
-                <h2>2. Data Collection</h2>
-                <div class="highlight-box">
-                    <p><strong>We do not collect, transmit, or share any personal data from your device.</strong></p>
-                </div>
-                <p>CoffeeAtlas operates entirely offline and does not:</p>
-                <ul>
-                    <li>Collect personal information</li>
-                    <li>Transmit data to external servers</li>
-                    <li>Share data with third parties</li>
-                    <li>Use analytics or tracking services</li>
-                    <li>Display advertisements</li>
-                </ul>
-            </div>
-            
-            <div class="section">
-                <h2>3. Local Data Storage</h2>
-                <p>All data created and stored in CoffeeAtlas remains on your device:</p>
-                <ul>
-                    <li><strong>Coffee Consumption Logs:</strong> Your consumption history is stored locally using SwiftData</li>
-                    <li><strong>User Profile:</strong> Your preferences, allergies, and settings are stored on your device</li>
-                    <li><strong>Custom Coffees:</strong> Any custom coffee recipes you create are stored locally</li>
-                    <li><strong>Reminders:</strong> Your reminder settings are stored on your device</li>
-                </ul>
-                <p>This data is never transmitted off your device and is only accessible to you through the app.</p>
-            </div>
-            
-            <div class="section">
-                <h2>4. Permissions</h2>
-                <p>CoffeeAtlas may request the following permissions:</p>
-                <ul>
-                    <li><strong>Notifications:</strong> Used only for coffee reminders that you set up. You can disable this permission at any time in iOS Settings.</li>
-                    <li><strong>Photos:</strong> Used only if you choose to add a custom image to a custom coffee recipe. This permission is optional and only requested when you attempt to add a photo.</li>
-                </ul>
-                <p>These permissions are optional and can be revoked at any time through iOS Settings.</p>
-            </div>
-            
-            <div class="section">
-                <h2>5. Third-Party Services</h2>
-                <p>CoffeeAtlas does not integrate with any third-party services that collect data. We do not use:</p>
-                <ul>
-                    <li>Analytics services</li>
-                    <li>Advertising networks</li>
-                    <li>Social media platforms</li>
-                    <li>Cloud storage services</li>
-                    <li>Third-party SDKs that collect data</li>
-                </ul>
-            </div>
-            
-            <div class="section">
-                <h2>6. Children's Privacy</h2>
-                <p>CoffeeAtlas is rated 9+ and is not directed to children under the age of 9. We do not knowingly collect personal information from children. If you are a parent or guardian and believe your child has provided us with personal information, please contact us.</p>
-            </div>
-            
-            <div class="section">
-                <h2>7. Data Security</h2>
-                <p>Since all data is stored locally on your device, data security is managed by iOS:</p>
-                <ul>
-                    <li>Data is encrypted using iOS Data Protection</li>
-                    <li>Data is stored securely using SwiftData</li>
-                    <li>No data transmission means no risk of interception</li>
-                </ul>
-            </div>
-            
-            <div class="section">
-                <h2>8. Your Rights</h2>
-                <p>Since all data is stored locally on your device, you have full control:</p>
-                <ul>
-                    <li>You can delete the app at any time, which will remove all local data</li>
-                    <li>You can manage app permissions in iOS Settings</li>
-                    <li>You can delete individual consumption logs within the app</li>
-                    <li>You can modify or delete your user profile at any time</li>
-                </ul>
-            </div>
-            
-            <div class="section">
-                <h2>9. Changes to This Privacy Policy</h2>
-                <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date.</p>
-                <p>You are advised to review this Privacy Policy periodically for any changes.</p>
-            </div>
-            
-            <div class="section">
-                <h2>10. Contact Us</h2>
-                <p>If you have any questions about this Privacy Policy, please contact us:</p>
-                <ul>
-                    <li><strong>Email:</strong> <a href="mailto:coffeeatlas.myjourney@gmail.com">coffeeatlas.myjourney@gmail.com</a></li>
-                    <li><strong>Support:</strong> <a href="https://canbasci.github.io/coffeeatlas-support">https://canbasci.github.io/coffeeatlas-support</a></li>
-                </ul>
-            </div>
-            
-            <div class="last-updated">
-                <p>This privacy policy is effective as of December 2025 and applies to CoffeeAtlas version 1.0 and later.</p>
-            </div>
-        </div>
-        
-        <div class="footer">
-            <p>© 2025 CoffeeAtlas. All rights reserved.</p>
-            <p><a href="https://canbasci.github.io/coffeeatlas-support">Back to Support</a> | <a href="https://github.com/CanBASCI/coffeeatlas-support">View on GitHub</a></p>
-        </div>
+    <h1>Privacy Policy - CoffeeAtlas</h1>
+    
+    <div class="highlight">
+        <p><strong>Last Updated:</strong> December 2025</p>
+        <p><strong>Effective Date:</strong> December 2025</p>
     </div>
+    
+    <h2>1. Introduction</h2>
+    <p>Welcome to CoffeeAtlas. We are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we handle data in our application.</p>
+    <p>CoffeeAtlas is an offline-first application designed to help you track your coffee consumption and explore coffee recipes. Your privacy is our priority.</p>
+    
+    <h2>2. Data Collection</h2>
+    <div class="highlight">
+        <p><strong>We do not collect, transmit, or share any personal data from your device.</strong></p>
+    </div>
+    <p>CoffeeAtlas operates entirely offline and does not:</p>
+    <ul>
+        <li>Collect personal information</li>
+        <li>Transmit data to external servers</li>
+        <li>Share data with third parties</li>
+        <li>Use analytics or tracking services</li>
+        <li>Display advertisements</li>
+    </ul>
+    
+    <h2>3. Local Data Storage</h2>
+    <p>All data created and stored in CoffeeAtlas remains on your device:</p>
+    <ul>
+        <li><strong>Coffee Consumption Logs:</strong> Your consumption history is stored locally using SwiftData</li>
+        <li><strong>User Profile:</strong> Your preferences, allergies, and settings are stored on your device</li>
+        <li><strong>Custom Coffees:</strong> Any custom coffee recipes you create are stored locally</li>
+        <li><strong>Reminders:</strong> Your reminder settings are stored on your device</li>
+    </ul>
+    <p>This data is never transmitted off your device and is only accessible to you through the app.</p>
+    
+    <h2>4. Permissions</h2>
+    <p>CoffeeAtlas may request the following permissions:</p>
+    <ul>
+        <li><strong>Notifications:</strong> Used only for coffee reminders that you set up. You can disable this permission at any time in iOS Settings.</li>
+        <li><strong>Photos:</strong> Used only if you choose to add a custom image to a custom coffee recipe. This permission is optional and only requested when you attempt to add a photo.</li>
+    </ul>
+    <p>These permissions are optional and can be revoked at any time through iOS Settings.</p>
+    
+    <h2>5. Third-Party Services</h2>
+    <p>CoffeeAtlas does not integrate with any third-party services that collect data. We do not use:</p>
+    <ul>
+        <li>Analytics services</li>
+        <li>Advertising networks</li>
+        <li>Social media platforms</li>
+        <li>Cloud storage services</li>
+        <li>Third-party SDKs that collect data</li>
+    </ul>
+    
+    <h2>6. Children's Privacy</h2>
+    <p>CoffeeAtlas is rated 9+ and is not directed to children under the age of 9. We do not knowingly collect personal information from children. If you are a parent or guardian and believe your child has provided us with personal information, please contact us.</p>
+    
+    <h2>7. Data Security</h2>
+    <p>Since all data is stored locally on your device, data security is managed by iOS:</p>
+    <ul>
+        <li>Data is encrypted using iOS Data Protection</li>
+        <li>Data is stored securely using SwiftData</li>
+        <li>No data transmission means no risk of interception</li>
+    </ul>
+    
+    <h2>8. Your Rights</h2>
+    <p>Since all data is stored locally on your device, you have full control:</p>
+    <ul>
+        <li>You can delete the app at any time, which will remove all local data</li>
+        <li>You can manage app permissions in iOS Settings</li>
+        <li>You can delete individual consumption logs within the app</li>
+        <li>You can modify or delete your user profile at any time</li>
+    </ul>
+    
+    <h2>9. Changes to This Privacy Policy</h2>
+    <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date.</p>
+    <p>You are advised to review this Privacy Policy periodically for any changes.</p>
+    
+    <h2>10. Contact Us</h2>
+    <p>If you have any questions about this Privacy Policy, please contact us:</p>
+    <ul>
+        <li><strong>Email:</strong> <a href="mailto:coffeeatlas.myjourney@gmail.com">coffeeatlas.myjourney@gmail.com</a></li>
+        <li><strong>Support:</strong> <a href="https://canbasci.github.io/coffeeatlas-support">https://canbasci.github.io/coffeeatlas-support</a></li>
+    </ul>
+    
+    <div class="last-updated">
+        <p>This privacy policy is effective as of December 2025 and applies to CoffeeAtlas version 1.0 and later.</p>
+    </div>
+    
+    <hr style="margin: 40px 0; border: none; border-top: 1px solid #ddd;">
+    
+    <p style="color: #666; font-size: 0.9em;">© 2025 CoffeeAtlas. All rights reserved.</p>
+    <p style="color: #666; font-size: 0.9em;"><a href="index.html">Back to Support</a> | <a href="https://github.com/CanBASCI/coffeeatlas-support">View on GitHub</a></p>
 </body>
 </html>
